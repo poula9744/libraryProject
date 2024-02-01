@@ -23,6 +23,8 @@ public class HistoryVo {
 	}
 	
 	//등록용 생성자
+	
+	
 	public HistoryVo(int historyNo, String rent, String bookreturn, int memberNo, int bookId) {
 		super();
 		this.historyNo = historyNo;
@@ -33,6 +35,14 @@ public class HistoryVo {
 		
 	}
 	
+	public HistoryVo(int bookId, String title, String pubs, String author) {
+		super();
+		this.bookId = bookId;
+		this.title = title;
+		this.pubs = pubs;
+		this.author = author;
+	}
+
 	//리스트용 생성자
 	public HistoryVo(int bookId, String title, String pubs, String pubDate, String author, String rentStatus ) {
 		super();
